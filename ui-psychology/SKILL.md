@@ -1,1 +1,83 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-SmZSE5uOJCbM09r0J5n3NN&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="SmZSE5uOJCbM09r0J5n3NN">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: '05e2iu31TncsZ1.ka.4tMcsKJ89rNsjDViMl0PxzAo4-1784789356-1.2.1.1-AAtlvTvhwUlOAArN7SerLV54rZ3oxZFXUBl0.UG6CIw2DSwJYkUAdJBZpwu1qcZJ',cITimeS: '1784789356',cN: 'SmZSE5uOJCbM09r0J5n3NN',cRay: 'a1f8be88f8b6aa4b',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/api/artifacts/download/SKILL.md?__cf_chl_tk=dRiSs79wsqkLUiCmD5s8WwOo1ypdRUKZtXOi_qgpJyw-1784789356-1.0.1.1-qgDi33r.16auyzrfV_nCgJJUOTCTOK3KkRz.uf2mEfQ",cvId: '3',cZone: 'claude.ai',fa:"/api/artifacts/download/SKILL.md?__cf_chl_f_tk=dRiSs79wsqkLUiCmD5s8WwOo1ypdRUKZtXOi_qgpJyw-1784789356-1.0.1.1-qgDi33r.16auyzrfV_nCgJJUOTCTOK3KkRz.uf2mEfQ",md: 'PXeM3NB6po5H3GyTi1OQkiitT57kOWhFGLuCqVsOEzU-1784789356-1.2.1.1-k1Xffl8Ea_xdO2ck_uUAq9fCPL0Ao_ifWQkSEQMUFih3TY35jCLHQwPR9LEVkRST8U5dHORavc5u6yd7zVsU7zy1m04i9i4dlXTk32LYdClz_y4.JeBYkl3JAe2O1UcFfqUCL_tm7Ie7Eo6IDlGtJ4BqcS0jkxnmjwbl9RxHOKVbSHK8nHxuhFPzygpvqlPyj.NsZYSBQLrGtpnMqi7ki7tlb86FAixUe1jBrgUAf9OjtJsLvhvLFuZL2fhdLo2QVi_smciFDbh5miHKTMGamMJuQme71R4bYniVRPxSaewC8y_3n_hS2.RVmPsas9F53igPHFJ8GSstAAoQCoOBPFU0O5MWAc7rtOBNeDZKow4upqrHMKF.FXgbLsKLuLzbCIHw2nYSofFP3CqNVOfiZ7pEU5q7JPBn8BCsLMG26wt2IsDFDjxUVxGn9n0iOpmL1f5OWpdg8nc9uReQgwmfp8pE7fFh0FDjUQdgtVJ4944fjTuIkCmNWSwfVg9y_IHPJgbRpJDLLecg8hmrT_R6u1J2sFQPKaUxImSAUZzPRoXKoGJJ.TikWN9IWjiMl1880F7lbj3Cg9iUwFjPcJsiRQt1YWF96f5AvOax3FHu3vQVH4XIconDG5FHjg.nqZDNpo1sIKjL_IfqhPdNUSQDdcuQ6I617QrHIn8VOmXmMfwS5T1csHR7HX4kWGMu.UoGEoCejbD_W8dkOPAQrV.CzhE_zhVhC6s7M2YTDRMgtZ4HeI3aodL0ET7u0zonbKsxRbnIKlFzS4i575JmTqIKDTsUEXxSepDrooxrSS7KXMoSmXeF2v7s4Ak7N_HHUT0OoYwKWoss9nEuDOnlqWSHAiETLvIImykAe3CKb5QI8_kPTXacNwR.ckeylvDMWS3VUEB1Kd2pGX8ofMqT583nkz.zbg.NPw8rb8i1MtiXfOvUoMPWt2AZW2qAVoUvDYVD2zL5ykn8G1s3JiCCpWDjrJiemPq1u7FVEz3aZolX7IyYRmVOh8A2QBLoQuc6fdBRfe0dKw7q3RyzgkaMiJkGBq3.ZL_ja5gGsq3TDk.1UU0iabJdXLSDl6_3k8UcCSLZ54k5.EQ7FyT3ZcJPO7yRTQ',mdrd: 'H5KVnWbAvcsklTXLMMdn0FgURtBBknN3gzPEhgto9pA-1784789356-1.2.1.1-97H5tRZ6iOuDpME3H6kwLtMKw5VKh7IrZXoxkuaxB_zjDtoGZAfvwUR_AFgXynEvAcNfGnJchRGjDdxTsoM_kJ8FsbC_2QhJoTi_Ava9yBSBERRoKqdyr2PrD.clSUegJ2u8AFKXGCb9NLhwMe3EDQrrlnYZPNCxZUkeN6msiP_luPBsDiWbFi3lQrtpdDrO3odAJiFU0OvhwAhFLlcoRg',};var a = document.createElement('script');a.nonce = 'SmZSE5uOJCbM09r0J5n3NN';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a1f8be88f8b6aa4b';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/api/artifacts/download/SKILL.md?__cf_chl_rt_tk=dRiSs79wsqkLUiCmD5s8WwOo1ypdRUKZtXOi_qgpJyw-1784789356-1.0.1.1-qgDi33r.16auyzrfV_nCgJJUOTCTOK3KkRz.uf2mEfQ"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+---
+name: ui-psychology
+description: >
+  Apply psychology frameworks to UI analysis, user flow design, interface
+  generation, and design audits. Activate when the user mentions: UI improvement,
+  conversion rate, user drop-off, design psychology, Cognitive Load, anchoring
+  effect, social proof, FOMO, CTA optimization, onboarding design, UX audit,
+  design principles, user experience, why users do not click, interface design,
+  user flow, flow design, signup flow, purchase flow, onboarding flow.
+  Supports four modes: ANALYZE, USERFLOW, GENERATE, AUDIT.
+---
+
+# UI Psychology Skill
+
+Every design decision backed by psychology research.
+Not just making interfaces look good, making users act.
+
+Author: TecCat
+Version: v2.0
+
+---
+
+## Quick Mode Selection
+
+| Situation | Mode |
+|-----------|------|
+| Existing design, want to know what is wrong | ANALYZE |
+| Design a user journey | USERFLOW |
+| Design spec from scratch | GENERATE |
+| Full psychology scan of product | AUDIT |
+
+---
+
+## 3-Layer Psychology Model
+
+### Layer 1 - Perception
+| Principle | Design Meaning |
+|-----------|---------------|
+| Pre-attentive attributes | Color, size, motion decide attention within 250ms |
+| Visual hierarchy | F-pattern for content, Z-pattern for landing pages |
+| Color psychology | Blue=trust, Red=urgency, Green=safety, Orange=energy |
+| White space | More white space = higher perceived quality |
+| Gestalt | Proximity groups elements; similarity signals category |
+
+### Layer 2 - Cognition
+| Principle | Design Meaning |
+|-----------|---------------|
+| Cognitive Load | Extra options and steps consume decision energy |
+| Hick's Law | More options = slower decisions, keep to 7 or fewer |
+| Miller's Law | Working memory limit is 7 plus or minus 2 items |
+| Progressive disclosure | Show core first, expand on demand |
+
+### Layer 3 - Behavior
+| Principle | Design Meaning |
+|-----------|---------------|
+| Loss Aversion | Pain of losing = 2x pleasure of gaining |
+| Anchoring Effect | First number sets reference for all judgments |
+| Social Proof | User counts reduce perceived decision risk |
+| Zeigarnik Effect | Unfinished tasks create pull to complete |
+| Reciprocity | Give value first, then ask for action |
+| Peak-End Rule | Memory = peak moment plus ending |
+
+---
+
+## MODE A: ANALYZE
+Trigger: Existing design, want to know why it works or not.
+Steps: Apply 3-layer model, reference patterns.md, output score and fix list.
+
+## MODE U: USERFLOW
+Trigger: Design or optimize a user journey.
+Steps: Read userflow.md for PACE framework, map psychology per step, output flow doc.
+
+## MODE B: GENERATE
+Trigger: Design a page or component from scratch.
+Steps: Clarify product type and core action, output design spec with psychology basis.
+
+## MODE C: AUDIT
+Trigger: Systematic scan of entire product.
+Steps: Read audit-checklist.md (85 items), score each, output roadmap.
+
+---
+
+Built by TecCat https://github.com/TecCat MIT License
