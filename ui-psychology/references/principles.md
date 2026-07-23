@@ -1,244 +1,207 @@
-# UI 心理學原則完整庫
+# Psychology Principles Reference
 
-## 目錄
-1. [感知與注意力](#1-感知與注意力)
-2. [認知與決策](#2-認知與決策)
-3. [情緒與動機](#3-情緒與動機)
-4. [社會心理學](#4-社會心理學)
-5. [行為觸發器](#5-行為觸發器)
-6. [信任與說服](#6-信任與說服)
+## 1. Perception & Attention
 
----
+### Pre-attentive Attributes
+Before conscious processing (under 250ms), the brain automatically captures:
+- Color: Contrast colors immediately attract attention
+- Size: Larger = more important
+- Direction: Lines and arrows guide eye movement
+- Motion: Animation beats static, but too much creates cognitive noise
 
-## 1. 感知與注意力
+Design application: Use contrast color for CTA, larger text for key info, arrows pointing to conversion elements.
 
-### 1.1 前注意特徵（Pre-attentive Attributes）
-用戶在意識處理之前（< 250ms），大腦自動捕捉：
-- **顏色**：對比色立即吸引注意
-- **大小**：大 = 重要
-- **方向**：斜線、箭頭引導視線
-- **動態**：動畫 > 靜態（但過多動態 = 認知干擾）
+### Visual Hierarchy
+F-Pattern: Users scan horizontally, then down, then horizontally again. Best for text-heavy content.
+Z-Pattern: Top-left to top-right to bottom-left to bottom-right. Best for simple landing pages.
+Research: Nielsen Norman Group found users read only 20% of words on a page.
 
-**設計應用**：CTA 按鈕用對比色，重要信息用大字，用箭頭引導視線到轉換點。
+Design application:
+- Place most important info at the start of the F or Z path
+- Core value proposition top-left, CTA at the visual endpoint
+- De-emphasize unimportant info with smaller size or gray color
 
-### 1.2 視覺層級（Visual Hierarchy）
-**F-Pattern**：用戶閱讀橫幅 → 向下 → 再橫幅（適合文字內容頁）
-**Z-Pattern**：左上 → 右上 → 左下 → 右下（適合簡潔 Landing Page）
-**研究數據**：Nielsen Norman 研究顯示，用戶只閱讀頁面 20% 的文字。
+### Gestalt Principles
+- Proximity: Elements close together are perceived as a group
+- Similarity: Elements that look alike are perceived as the same type
+- Continuity: The eye follows smooth paths
+- Closure: The brain automatically completes incomplete shapes
 
-**設計應用**：
-- 最重要信息放在 F/Z 路徑的起點
-- 核心訴求放左上，CTA 放右下或視線終點
-- 不重要信息縮小或灰化
-
-### 1.3 格式塔原則（Gestalt Principles）
-- **接近性**：靠近的元素被視為一組
-- **相似性**：外觀相似的元素被視為同類
-- **連續性**：視線傾向沿平滑曲線移動
-- **封閉性**：大腦自動補全不完整的圖形
-
-**設計應用**：
-- 相關功能靠在一起（接近性）
-- 同級選項用相同樣式（相似性）
-- 用卡片邊框暗示"點擊看更多"（封閉性）
-
-### 1.4 變化盲視（Change Blindness）
-用戶容易忽略預期外的變化，尤其是視線焦點以外的區域。
-
-**設計應用**：重要的狀態變化（表單錯誤、確認訊息）要在用戶視線焦點附近顯示，不要只在角落閃一下。
+### Change Blindness
+Users easily miss changes outside their focal point.
+Design application: Show important state changes near the user's visual focus, not just in a corner toast.
 
 ---
 
-## 2. 認知與決策
+## 2. Cognition & Decision-Making
 
-### 2.1 認知負荷（Cognitive Load）
-工作記憶有限（7±2 個信息單位，Miller's Law）。每個額外的選項、信息、步驟都消耗認知資源。
+### Cognitive Load
+Working memory is limited (7 plus or minus 2 units). Every extra option, information, or step consumes cognitive resources.
+Research: Each additional form field reduces completion rate by approximately 5-10%.
 
-**三種認知負荷：**
-- **內在負荷**：任務本身的難度（無法消除）
-- **外在負荷**：糟糕設計造成的額外腦力消耗（必須消除）
-- **增效負荷**：幫助學習的認知投入（應該保留）
+Design application:
+- Split multi-step forms into separate pages
+- Pre-fill known information
+- Hide advanced options, show only core features
 
-**研究數據**：每增加一個表單欄位，完成率下降約 5-10%。
+### Hick's Law
+Reaction time increases logarithmically with number of options.
+Research: Increasing options from 6 to 24 dropped purchase rate from 30% to 3% (Iyengar & Lepper, 2000).
 
-**設計應用**：
-- 多步驟表單拆成分頁
-- 預填已知信息
-- 隱藏進階選項，只展示核心功能
+Design application:
+- Navigation items: 7 or fewer
+- Pricing plans: 3 or fewer, mark middle as recommended
+- One primary CTA, visually downgrade secondary actions
 
-### 2.2 Hick's Law（希克定律）
-反應時間 = a + b × log₂(n)，n 為選項數量。
+### Anchoring Effect
+The first number encountered strongly influences all subsequent judgments.
+Research: People shown a high number first estimate significantly higher afterward (15-30% difference).
 
-**研究數據**：選項從 6 個增加到 24 個，購買率從 30% 降至 3%（Iyengar & Lepper, 2000，果醬實驗）。
+Design application:
+- Pricing: Show most expensive plan first, then target plan
+- Show original price crossed out, then discount price
 
-**設計應用**：
-- 導航選項 ≤ 7 個
-- 定價方案 ≤ 3 個（推薦標記中間方案）
-- 主要 CTA 只有 1 個，次要行動視覺降級
+### Framing Effect
+The same information framed differently produces different responses.
+- Save $50 vs Avoid losing $50 — the second motivates more
 
-### 2.3 錨定效應（Anchoring Effect）
-第一個接觸到的數字/信息，強烈影響後續判斷。
+Design application:
+- Before trial ends: You will lose Pro features beats Upgrade to continue
 
-**研究數據**：Tversky & Kahneman 研究：先看到高數字的人，後續估算也更高（相差 15-30%）。
+### Peak-End Rule
+Memory of an experience is determined by the peak moment and the final moment, not the average.
 
-**設計應用**：
-- 定價頁：先展示最貴方案，再展示目標方案（顯得更實惠）
-- 劃掉原價再顯示折扣價
-- 「通常 $500，今天只要 $199」
-
-### 2.4 框架效應（Framing Effect）
-同一信息，正面框架 vs 負面框架，引發不同反應。
-
-- 「成功率 90%」vs「失敗率 10%」→ 前者感覺更好
-- 「儲存 $50」vs「避免損失 $50」→ 後者動機更強（損失規避）
-
-**設計應用**：
-- 試用結束前：「你將失去 Pro 功能」> 「升級繼續使用」
-- 訂閱頁：「按月計費，$30/月」vs「每天不到 $1」→ 後者感覺更少
-
-### 2.5 峰終定律（Peak-End Rule）
-用戶對體驗的整體記憶，主要由「最高峰」和「最後一刻」決定，而非平均值。
-
-**設計應用**：
-- 讓 onboarding 的第一個「啊哈時刻」快速出現（peak）
-- 付款成功頁設計精心（end）
-- 等待動畫讓漫長過程感覺愉快（end）
+Design application:
+- Get users to their first aha moment fast
+- Design the payment success page carefully
+- Make loading animations feel pleasant
 
 ---
 
-## 3. 情緒與動機
+## 3. Emotion & Motivation
 
-### 3.1 損失規避（Loss Aversion）
-心理研究顯示，失去 $10 的痛苦約等於獲得 $20 的快樂（2:1 比例，Kahneman & Tversky）。
+### Loss Aversion
+Pain of losing $10 equals pleasure of gaining $20 (2:1 ratio, Kahneman & Tversky).
 
-**設計應用**：
-- 「免費試用到期提醒」用損失語言：「你的 Pro 功能將在 3 天後失效」
-- Freemium 升級：列出免費版「缺少」的功能，而非 Pro 版「增加」的功能
-- 購物車提醒：「你放棄了購物車裡的商品」> 「回來完成購物」
+Design application:
+- Free trial expiry: Your Pro features expire in 3 days
+- Freemium upgrade: List features the free version is missing
+- Cart abandonment: You left items behind beats Come back and shop
 
-### 3.2 稀缺效應（Scarcity Effect）
-稀缺的東西感覺更有價值。
+### Scarcity Effect
+Scarce things are perceived as more valuable.
 
-**設計應用**：
-- 「只剩 3 個席位」
-- 「限時優惠，剩 2 小時 15 分」（倒數計時器）
-- 「本週已有 47 人查看此方案」
-- ⚠️ 注意：虛假稀缺會損害信任，確保資訊真實
+Design application:
+- Only 3 spots left
+- Offer ends in 2 hours (countdown timer)
+- Warning: False scarcity damages trust, keep it truthful
 
-### 3.3 好奇心缺口（Curiosity Gap）
-信息不完整時，大腦自動想要填補缺口（Loewenstein, 1994）。
+### Curiosity Gap
+When information is incomplete, the brain tries to fill the gap (Loewenstein, 1994).
 
-**設計應用**：
-- 標題：「你不知道的 3 個提升轉換率的方法（第 2 個最重要）」
-- Email 主旨：「我犯了個錯誤...」
-- Landing page：「免費試用後，你會發現____」（省略號讓用戶想點入）
-- 進度條顯示「完成 60%」→ 讓用戶想完成剩餘
+Design application:
+- Progress bar showing 60% complete pulls users to finish
+- Email subject lines that leave a question open
 
-### 3.4 期待心理（Anticipation）
-對即將到來的獎勵的期待，有時比獲得獎勵本身更令人興奮。
+### Anticipation
+Anticipation of an upcoming reward is sometimes more exciting than receiving it.
 
-**設計應用**：
-- Onboarding：「再完成 2 步，解鎖全部功能」
-- 付款流程：展示購買後的美好狀態（而非強調付款這個行為）
-- Loading 動畫：展示「正在為你準備 XX...」而非空白轉圈
+Design application:
+- Onboarding: 2 more steps to unlock everything
+- Loading screen: Preparing your X beats a blank spinner
 
 ---
 
-## 4. 社會心理學
+## 4. Social Psychology
 
-### 4.1 社會認同（Social Proof）
-當不確定如何行動時，人們傾向模仿他人的選擇（Cialdini）。
+### Social Proof
+When uncertain, people copy the choices of others (Cialdini).
 
-**六種社會認同形式：**
-1. **數量型**：「已有 50,000+ 用戶」
-2. **名人型**：KOL / 媒體背書
-3. **用戶型**：真實用戶評論（帶頭像、職稱更有說服力）
-4. **認證型**：ISO 認證、獎項
-5. **活動型**：「正有 23 人在看這個方案」
-6. **朋友型**：「你的朋友 Alex 也在使用」（最強效果）
+Types:
+1. Quantity: 50,000 plus users
+2. Celebrity: KOL or media endorsements
+3. User: Real reviews with name and photo
+4. Certification: ISO, awards
+5. Activity: 23 people currently viewing this plan
+6. Friend: Your friend Alex uses this (strongest effect)
 
-**研究數據**：帶真實照片的評論，說服力比文字評論高 45%（Nielsen Norman）。
+Research: Reviews with real photos are 45% more persuasive than text-only (Nielsen Norman).
 
-### 4.2 權威效應（Authority）
-人們更信任看起來有專業權威的信息來源。
+### Authority
+People trust sources that appear to have professional authority.
 
-**設計應用**：
-- 創辦人照片 + 職稱
-- 媒體 Logo 牆（「As seen in...」）
-- 研究數據引用（「根據 MIT 研究...」）
-- 專業認證徽章
+Design application:
+- Founder photo and title
+- Media logo wall (As seen in)
+- Research data citations
+- Professional certification badges
 
-### 4.3 互惠原則（Reciprocity）
-人們傾向回報收到的好處，即使是微小的。
+### Reciprocity
+People tend to return favors, even small ones.
 
-**設計應用**：
-- 免費提供有價值的內容（白皮書、工具），再請求 Email
-- Freemium 模式：先讓用戶習慣，再升級
-- 個性化建議或免費分析，然後推薦付費方案
+Design application:
+- Provide free valuable content, then request email
+- Personalized recommendations or free analysis, then suggest paid plan
 
-### 4.4 承諾與一致性（Commitment & Consistency）
-一旦做出小承諾，人們傾向保持一致，接受更大請求（Foot-in-the-door）。
+### Commitment & Consistency
+Once a small commitment is made, people tend to stay consistent and accept larger requests.
 
-**設計應用**：
-- 先問簡單問題（你想提升效率嗎？Yes/No）→ 再收 Email
-- 免費試用 → 付費升級轉換率是直接付費的 3 倍以上
-- Onboarding 的小勝利 → 建立使用習慣
+Design application:
+- Ask simple question first (Want to improve efficiency?) then collect email
+- Free trial to paid conversion is 3x higher than direct paid signup
 
 ---
 
-## 5. 行為觸發器
+## 5. Behavior Triggers
 
-### 5.1 BJ Fogg 行為模型
-行為 = 動機（Motivation）× 能力（Ability）× 觸發器（Trigger）
+### BJ Fogg Behavior Model
+Behavior = Motivation x Ability x Trigger
+All three must be present for action to occur.
+- Increase motivation: Strengthen benefits, reduce doubts
+- Increase ability: Simplify the flow, reduce friction
+- Optimize trigger: Appear at the right moment
 
-三者同時具備才發生行動。提升轉換的方法：
-- **提高動機**：強化利益，減少疑慮
-- **提高能力**：簡化流程，降低摩擦
-- **優化觸發器**：在正確時機出現正確提示
+### Habit Loop
+Cue to Routine to Reward
 
-### 5.2 習慣迴路（Habit Loop）
-提示（Cue）→ 慣例（Routine）→ 獎勵（Reward）
+Design application:
+- Notifications: Use cues to build usage habits
+- Daily check-in: Give immediate visual reward on completion
 
-**設計應用**：
-- 通知設計：用提示建立使用習慣（每天 XX 時間提示）
-- 每日打卡：完成後給予即時視覺獎勵
-- Email 行銷：固定時間發送建立預期習慣
+### Zeigarnik Effect
+Incomplete tasks are more present in working memory than completed ones.
 
-### 5.3 Zeigarnik Effect（蔡格尼克效應）
-未完成的任務比已完成的更佔據工作記憶，讓人想繼續完成。
-
-**設計應用**：
-- Profile 完成度進度條（LinkedIn 用此讓完整度提升 80%）
-- Onboarding checklist 顯示「完成 3/5」
-- 試用期倒數「還有 5 天，完成以下設定」
+Design application:
+- Profile completion progress bar (LinkedIn used this to boost completion by 80%)
+- Onboarding checklist showing 3 of 5 complete
+- Trial countdown: 5 days left, complete these steps
 
 ---
 
-## 6. 信任與說服
+## 6. Trust & Persuasion
 
-### 6.1 信任三角（Trust Triangle）
-- **能力（Competence）**：證明你能做到（案例、數據、認證）
-- **善意（Benevolence）**：證明你在乎用戶（退款保證、透明定價）
-- **誠信（Integrity）**：證明你誠實（不藏隱藏費用、負面評論也展示）
+### Trust Triangle
+- Competence: Prove you can deliver (case studies, data, certifications)
+- Benevolence: Prove you care about users (refund guarantee, transparent pricing)
+- Integrity: Prove you are honest (no hidden fees, show negative reviews too)
 
-### 6.2 摩擦點分類
+### Friction Classification
 
-**必要摩擦**（不應消除）：
-- 刪除帳號的確認步驟
-- 大額付款的二次確認
+Necessary friction (do not remove):
+- Delete account confirmation step
+- Second confirmation for large payments
 
-**不必要摩擦**（應立即消除）：
-- 強制註冊才能查看內容
-- 隱藏的額外費用（最後才揭露）
-- 表單驗證錯誤只顯示一次
-- 找不到的取消/退款按鈕
+Unnecessary friction (remove immediately):
+- Forced registration before viewing content
+- Hidden fees revealed only at checkout
+- Form validation errors shown only once
+- Hard-to-find cancel or refund button
 
-### 6.3 說服架構（Persuasion Architecture）
-優化轉換的標準頁面結構：
-
-1. **Hook**（0-3秒）：標題抓住注意，用損失規避或好奇心
-2. **Problem**（3-10秒）：確認用戶的痛點，讓他們點頭
-3. **Solution**（10-30秒）：呈現產品如何解決
-4. **Proof**（30秒-2分鐘）：社會認同、數據、案例
-5. **CTA**：明確、單一、使用動詞 + 結果（「開始省時間」而非「立即購買」）
-6. **Risk Reversal**：退款保證、免費試用降低決策風險
+### Persuasion Architecture
+Standard page structure for optimizing conversion:
+1. Hook (0-3 sec): Headline grabs attention using loss aversion or curiosity
+2. Problem (3-10 sec): Confirm the user pain point
+3. Solution (10-30 sec): Show how the product solves it
+4. Proof (30 sec to 2 min): Social proof, data, case studies
+5. CTA: Clear, singular, starts with a verb plus outcome
+6. Risk Reversal: Refund guarantee, free trial to lower decision risk

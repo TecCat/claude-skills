@@ -1,77 +1,75 @@
-# UI Pattern × 心理學對應表
+# UI Pattern x Psychology Mapping
 
 ## 1. Landing Page / Hero Section
 
-| 元件 | 心理學原則 | 最佳實踐 | 常見錯誤 |
-|------|-----------|---------|---------|
-| 主標題（Headline） | 損失規避、好奇心缺口 | 聚焦用戶痛點或渴望結果，而非產品功能 | 「歡迎使用 XX 系統」（沒有說明對用戶的意義） |
-| 副標題 | 認知負荷降低 | 一句話補充主標，不超過 15 字 | 塞入所有特色，讓用戶不知重點 |
-| Hero Image | 社會認同、期待心理 | 展示使用後的快樂用戶或結果，而非產品截圖 | 用通用 Stock Photo，沒有真實感 |
-| 主 CTA 按鈕 | 行為觸發、降低摩擦 | 動詞開頭 + 結果（「開始省時間」），對比色 | 「提交」「確認」等無意義文字 |
-| 次 CTA | 損失規避輔助 | 降低視覺優先級（文字連結而非按鈕） | 兩個按鈕視覺等級相同，造成選擇困難 |
-| 信任標誌 | 社會認同、權威效應 | Hero 區域下方放媒體/客戶 Logo | 放在頁面最底部，大多數用戶看不到 |
+| Component | Psychology Principle | Best Practice | Common Mistake |
+|-----------|---------------------|--------------|----------------|
+| Headline | Loss Aversion, Curiosity Gap | Focus on user pain point or desired outcome | Welcome to XX System — says nothing about benefit |
+| Subheadline | Reduce Cognitive Load | One sentence supporting headline, under 15 words | Stuffing all features in, burying the main point |
+| Hero Image | Social Proof, Anticipation | Show happy users or results, not product screenshots | Generic stock photos with no authenticity |
+| Primary CTA | Behavior Trigger | Verb plus outcome (Start saving time), contrast color | Submit or Confirm — meaningless text |
+| Secondary CTA | Loss Aversion support | Lower visual priority, text link not button | Two buttons at same visual level causing choice paralysis |
+| Trust badges | Social Proof, Authority | Place media or client logos just below the hero | Placed at the very bottom — most users never see them |
 
 ---
 
-## 2. 定價頁（Pricing Page）
+## 2. Pricing Page
 
-| 元件 | 心理學原則 | 最佳實踐 | 常見錯誤 |
-|------|-----------|---------|---------|
-| 方案數量 | Hick's Law | 最多 3 個方案（推薦標記中間）| 4 個以上方案，讓用戶不知選哪個 |
-| 推薦方案標記 | 框架效應、社會認同 | 「最受歡迎」> 「推薦」，視覺上放大或高亮 | 所有方案視覺等級相同 |
-| 價格呈現 | 錨定效應 | 從左到右：貴→中→便宜，讓中間顯得合理 | 從左到右：便宜→貴（破壞錨定效應） |
-| 計費週期切換 | 損失規避 | 年繳省多少錢（顯示損失：「每月多付 $X」） | 只顯示折扣百分比 |
-| 功能對比 | 認知負荷 | 用 ✓ / ✗ 清單，而非落落長的描述文字 | 每個方案的文字描述不一樣，難以比較 |
-| 風險消除 | 信任、損失規避 | 「30 天無理由退款」放在 CTA 附近 | 退款保證只在 FAQ 裡提到 |
-| 社會認同 | 社會認同 | 在推薦方案旁放相關客戶 Logo 或評論 | 定價頁沒有任何社會認同元素 |
-
----
-
-## 3. 表單 / 結帳頁（Forms & Checkout）
-
-| 元件 | 心理學原則 | 最佳實踐 | 常見錯誤 |
-|------|-----------|---------|---------|
-| 表單欄位數 | 認知負荷、Hick's Law | 只問必要信息，每減少一個欄位提升 5% 完成率 | 一次問所有信息（包含「如何知道我們」等非必要） |
-| 多步驟表單 | Zeigarnik Effect | 顯示進度條「步驟 2/3」 | 一頁顯示全部，沒有進度感 |
-| 欄位標籤 | 認知負荷 | Floating label（在欄位上方）> Placeholder（填入後消失） | 只用 Placeholder，用戶填到一半忘記要填什麼 |
-| 錯誤訊息 | 認知負荷 | 即時驗證（輸入後立即提示），錯誤在欄位旁顯示 | 提交後才顯示一堆錯誤，讓用戶重填 |
-| 信任標誌 | 信任、損失規避 | 信用卡圖標、SSL 鎖、「安全加密」放在付款欄位旁 | 付款頁沒有任何安全標誌 |
-| 主 CTA 文字 | 框架效應 | 「完成訂單，立享 XX」> 「確認付款」 | 「提交」「確認」等機械式文字 |
-| 訂單摘要 | 錨定效應 | 顯示原價 + 折扣 + 最終金額（讓折扣更有感） | 只顯示最終金額 |
-| 放棄購物車 | 損失規避 | Email：「你還有商品等待你」+ 顯示商品圖 | 通用提醒信，不顯示具體商品 |
+| Component | Psychology Principle | Best Practice | Common Mistake |
+|-----------|---------------------|--------------|----------------|
+| Number of plans | Hick's Law | Maximum 3 plans, mark middle as recommended | 4 or more plans — users do not know which to pick |
+| Recommended label | Framing Effect, Social Proof | Most Popular beats Recommended; visually enlarge | All plans look visually equal |
+| Price order | Anchoring Effect | Left to right: expensive to mid to cheap | Left to right: cheap to expensive — destroys anchoring |
+| Billing toggle | Loss Aversion | Show how much more monthly costs | Only show percentage discount |
+| Feature comparison | Cognitive Load | Use checkmarks and X marks, not long text | Each plan has different text — impossible to compare |
+| Risk reversal | Trust, Loss Aversion | 30-day money-back guarantee placed near CTA | Refund guarantee only mentioned in FAQ |
 
 ---
 
-## 4. Onboarding 流程
+## 3. Forms & Checkout
 
-| 元件 | 心理學原則 | 最佳實踐 | 常見錯誤 |
-|------|-----------|---------|---------|
-| 第一步 | 承諾一致性 | 最簡單的行動開始（如「設定你的目標」）建立承諾 | 第一步就要求複雜設定 |
-| 進度指示 | Zeigarnik Effect | 顯示總步驟 + 已完成（「完成 2/5 步」） | 沒有任何進度感 |
-| 啊哈時刻（Aha Moment） | 峰終定律、期待心理 | 第一次使用就讓用戶體驗到核心價值，越快越好 | Onboarding 結束才能用到核心功能 |
-| 空狀態（Empty State） | 好奇心缺口 | 空狀態展示「有資料後長這樣」的示例 + CTA | 空白頁面只顯示「這裡沒有資料」 |
-| 教程 / Tooltip | 認知負荷漸進 | 用戶操作到某功能時才出現提示（情境式）| 一進入就彈出 5 個 Tooltip 彈窗 |
-| 個人化 | 社會認同、互惠 | 問 2-3 個問題後，展示個人化內容（讓用戶感受到被了解） | 所有人看到完全相同的 Onboarding |
-
----
-
-## 5. 通知 / Email
-
-| 元件 | 心理學原則 | 最佳實踐 | 常見錯誤 |
-|------|-----------|---------|---------|
-| 主旨行 | 好奇心缺口、損失規避 | 留下信息缺口，或用損失語言（「你快錯過 XX 了」） | 「XX 的月報告」（平淡、不引起點擊欲） |
-| 發送時機 | 行為觸發 | 在用戶完成關鍵行動後（即時觸發）或特定行為缺失後 | 固定時間發送，不考慮用戶行為 |
-| 通知文字 | 損失規避 | 「你有 3 個未讀留言」> 「查看留言」 | 「有新消息」（沒有數字，缺乏urgency） |
-| Re-engagement | 損失規避 | 「你的進度將在 7 天後重置」 | 「我們好久不見，回來看看吧」 |
+| Component | Psychology Principle | Best Practice | Common Mistake |
+|-----------|---------------------|--------------|----------------|
+| Number of fields | Cognitive Load | Minimize — each field removed improves completion by 5% | Ask for everything at once |
+| Multi-step form | Zeigarnik Effect | Show progress indicator Step 2 of 3 | Single long page with no sense of progress |
+| Field labels | Cognitive Load | Floating label visible above field | Placeholder only — users forget what to fill mid-form |
+| Error messages | Cognitive Load | Real-time validation, display next to field | Only show errors after submit |
+| Trust signals | Trust, Loss Aversion | SSL lock, card icons, Secure & encrypted next to payment | No security indicators on payment page |
+| Primary CTA text | Framing Effect | Complete order and get XX beats Confirm payment | Submit or Confirm — mechanical |
+| Order summary | Anchoring Effect | Show original price plus discount plus final amount | Only show final amount |
 
 ---
 
-## 6. 搜尋 / 篩選 / 列表
+## 4. Onboarding Flow
 
-| 元件 | 心理學原則 | 最佳實踐 | 常見錯誤 |
-|------|-----------|---------|---------|
-| 搜尋結果數量 | 社會認同 | 顯示「找到 2,847 個結果」增加豐富感 | 不顯示結果數量 |
-| 篩選選項 | Hick's Law | 預設收合，按需展開；最多 5-7 個篩選維度 | 一次展示 20 個篩選，讓用戶不知從何選起 |
-| 預設排序 | 框架效應 | 預設「最受歡迎」（社會認同）或「最相關」 | 預設「最新上架」（不一定是用戶最需要的） |
-| 活動狀態 | 稀缺效應 | 「3 人正在查看」「昨天售出 12 個」 | 靜態列表，沒有任何活躍信號 |
-| 空結果頁 | 認知負荷 | 建議相關搜尋、顯示熱門項目 | 「找不到結果」然後沒有任何引導 |
+| Component | Psychology Principle | Best Practice | Common Mistake |
+|-----------|---------------------|--------------|----------------|
+| First step | Commitment & Consistency | Start with simplest action to build commitment | First step requires complex configuration |
+| Progress indicator | Zeigarnik Effect | Show total steps and completed (Step 2 of 5) | No progress indication at all |
+| Aha Moment | Peak-End Rule, Anticipation | Let users experience core value on first use | Core value locked behind long onboarding |
+| Empty state | Curiosity Gap | Show example of what data looks like when populated | Empty page with just No data here |
+| Tooltips | Progressive Disclosure | Show contextually when user reaches that feature | Pop up 5 tooltips the moment user logs in |
+| Personalization | Social Proof, Reciprocity | Ask 2-3 questions then show personalized content | Everyone sees exactly the same onboarding |
+
+---
+
+## 5. Notifications & Email
+
+| Component | Psychology Principle | Best Practice | Common Mistake |
+|-----------|---------------------|--------------|----------------|
+| Subject line | Curiosity Gap, Loss Aversion | Leave an information gap or use loss language | XX Monthly Report — flat, no click motivation |
+| Send timing | Behavior Trigger | Send after user completes a key action | Fixed time sends, ignoring user behavior |
+| Notification copy | Loss Aversion | You have 3 unread messages beats View messages | You have new notifications — no number, no urgency |
+| Re-engagement | Loss Aversion | Your progress will reset in 7 days | We miss you, come back and look around |
+
+---
+
+## 6. Search / Filter / List
+
+| Component | Psychology Principle | Best Practice | Common Mistake |
+|-----------|---------------------|--------------|----------------|
+| Result count | Social Proof | Show 2847 results found | No result count shown |
+| Filter options | Hick's Law | Collapse by default, max 5-7 filter dimensions | Show 20 filters at once |
+| Default sort | Framing Effect | Default to Most Popular or Most Relevant | Default to Newest |
+| Activity signals | Scarcity Effect | 3 people viewing now, 12 sold yesterday | Static list, no activity signals |
+| Empty results | Cognitive Load | Suggest related searches, show popular items | No results found with no guidance |

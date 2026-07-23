@@ -1,267 +1,126 @@
-# User Flow 心理學框架
+# User Flow Psychology Framework
 
-## 目錄
-1. [心理旅程模型（PACE Framework）](#1-心理旅程模型)
-2. [常見 Flow 類型與心理策略](#2-常見-flow-類型)
-3. [步驟心理狀態地圖](#3-步驟心理狀態地圖)
-4. [Flow 摩擦點分類與解法](#4-flow-摩擦點分類)
-5. [分支邏輯與挽回策略](#5-分支邏輯與挽回策略)
-6. [輸出模板速查](#6-輸出模板速查)
+## PACE Model
 
----
+At every step of every user flow, the user's psychology shifts across four dimensions:
 
-## 1. 心理旅程模型（PACE Framework）
+P — Pain: How urgent is the user's problem right now?
+A — Anxiety: How nervous is the user about continuing?
+C — Confidence: Does the user believe they can complete this?
+E — Energy: How much effort is the user willing to invest?
 
-每個 User Flow 的每一步，用戶的心理都在這四個維度變化：
-
-```
-P — Pain（痛點強度）     ：用戶感受到的問題有多迫切？
-A — Anxiety（焦慮程度）  ：用戶對「繼續下去」有多不安？
-C — Confidence（信心）   ：用戶相信自己能完成嗎？產品能幫他嗎？
-E — Energy（行動能量）   ：用戶願意付出多少努力？
-```
-
-**設計原則**：
-- 流程開始時 Pain ↑，才有動力繼續
-- 每一步都要降低 Anxiety（移除疑慮、提供保證）
-- 每一步都要提升 Confidence（小成就感、進度反饋）
-- 高 Energy 要求（填寫複雜表單）只能放在 Confidence 已建立之後
+Design principles:
+- Flow entry: Pain must be high enough to motivate continuation
+- Every step: Reduce Anxiety (remove doubts, provide assurances)
+- Every step: Increase Confidence (small wins, progress feedback)
+- High Energy requirements only after Confidence is established
 
 ---
 
-## 2. 常見 Flow 類型與心理策略
+## Common Flow Types & Strategies
 
-### 2A. 註冊 / 登入流程（Signup Flow）
+### Signup / Login Flow
+Core barrier: Why should I give you my data? Will I get spammed?
 
-**核心心理障礙**：「我為什麼要給你我的資料？」「我會被垃圾郵件轟炸嗎？」
+| Step | Strategy | Design |
+|------|----------|--------|
+| Entry point | Reciprocity | Show free trial or get XX instantly before asking for email |
+| Email input | Trust building | We never spam plus privacy policy link |
+| Password | Reduce Cognitive Load | Real-time strength indicator, show password toggle |
+| Verification | Anticipation | Your account is being set up, verify to start using XX |
+| Completion | Peak-End Rule | Welcome page with animation plus personalized greeting |
 
-**心理學策略組合**：
-| 步驟 | 策略 | 具體設計 |
-|------|------|---------|
-| 進入點 | 互惠原則 | 先展示「免費試用」或「立即獲得 XX」，再收 Email |
-| Email 輸入 | 信任建立 | 旁邊放「我們不會發垃圾郵件」+ 隱私政策連結 |
-| 密碼設定 | 降低認知負荷 | 即時強度指示、允許顯示密碼、密碼建議生成 |
-| 驗證信 | 期待心理 | 「你的帳號正在準備中，驗證後即可使用 XX」 |
-| 完成 | 峰終定律 | 歡迎頁有驚喜感：動畫 + 個人化歡迎語 |
+Key decisions:
+- SSO (Google/Apple) strongly recommended, boosts conversion 30-50%
+- Phone verification: each extra step loses 15-25% of users
+- Consider enter first, verify later to reduce friction
 
-**關鍵決策**：
-- 是否允許 SSO（Google/Apple）？→ 強烈建議，轉換率提升 30-50%
-- 是否需要手機驗證？→ 每增加一步流失 15-25%，非必要不加
-- Email 驗證是否必要？→ 可改為「先進入，後驗證」降低摩擦
+### Onboarding Flow
+Core barrier: How long will setup take? Is this right for me?
 
----
+| Step | PACE | Strategy | Design |
+|------|------|----------|--------|
+| Welcome | Pain up, Anxiety up | Confirm pain point | Built for job title like you |
+| Quiz | Anxiety down | Commitment & Consistency | 2-3 questions to get user invested |
+| Core feature | Confidence up | Progressive disclosure | Show only the top 1 core feature |
+| First action | Energy down | Lower the barrier | Simplest possible action |
+| Aha Moment | Confidence high | Peak-End Rule | Show results immediately, give visual reward |
+| Checklist | Zeigarnik | Progress pull | Show 3 of 5 complete |
 
-### 2B. Onboarding 流程
+Aha Moment rules:
+- Must be reachable within 5 minutes
+- Must show the user's own real data, not demo data
+- Must have visual celebration (animation, confetti)
 
-**核心心理障礙**：「我要花多少時間設定？」「這個東西真的適合我嗎？」
+### Purchase / Checkout Flow
+Core barrier: Am I wasting money? Is payment secure? Can I get a refund?
 
-**心理學策略組合**：
-| 步驟 | PACE 狀態 | 策略 | 具體設計 |
-|------|---------|------|---------|
-| 歡迎頁 | Pain↑ Anxiety↑ | 確認痛點 | 「為像你這樣的 [職稱] 設計的」|
-| 個人化問卷 | Anxiety↓ | 承諾一致性 | 2-3 個問題，讓用戶「投入」自己的情境 |
-| 核心功能介紹 | Confidence↑ | 漸進式呈現 | 只展示最核心 1 個功能，其他隱藏 |
-| 第一個行動 | Energy↓ | 降低門檻 | 最簡單的行動（如「創建你的第一個 XX」）|
-| Aha Moment | Confidence↑↑ | 峰終定律 | 立即展示成果，給予視覺獎勵 |
-| 完成 checklist | Zeigarnik | 進度拉力 | 顯示「完成 3/5」，讓用戶想繼續 |
+| Step | Strategy | Design |
+|------|----------|--------|
+| Product page | Anchoring | Crossed-out original price then current price |
+| Add to cart | Zeigarnik | Show cart count badge |
+| Cart page | Loss Aversion | Limited stock plus X people viewing |
+| Data entry | Reduce Cognitive Load | SSO autofill, guest checkout |
+| Payment | Trust building | SSL lock plus card icons plus refund guarantee |
+| Confirmation | Peak-End Rule | Order animation plus you made a great choice |
 
-**Aha Moment 設計原則**：
-- 必須在 5 分鐘內到達（超過 5 分鐘流失率急升）
-- 要讓用戶看到「真實的自己的資料」，不是 Demo 資料
-- 要有視覺慶祝感（動畫、confetti、聲音）
+Key data:
+- Forced account creation increases abandonment by 35% (Baymard Institute)
+- Hidden fees at the end is the number 1 cause of abandonment (48%)
+- Refund guarantee near CTA lifts conversion 20-30%
 
----
+### Upgrade / Paid Conversion Flow
+Core barrier: Is my free tier good enough? Is upgrading worth it?
 
-### 2C. 購買 / 結帳流程（Purchase Flow）
+| Trigger | Strategy | Design |
+|---------|----------|--------|
+| Feature locked | Loss Aversion | You are trying to use a Pro feature, show what unlocks |
+| Usage near limit | FOMO + Scarcity | You have used 80% of your quota, red progress bar |
+| Trial countdown | Loss Aversion | Your Pro trial ends in 3 days, you will lose... |
+| Pricing page | Anchoring | Show Enterprise first, then Pro |
+| CTA | Framing | Continue with Pro beats Upgrade to Pro |
 
-**核心心理障礙**：「我在浪費錢嗎？」「付款安全嗎？」「我能退款嗎？」
+### Re-engagement Flow
+Core barrier: I have gotten used to not having this product.
 
-**心理學策略組合**：
-| 步驟 | 策略 | 具體設計 |
-|------|------|---------|
-| 商品頁 | 錨定效應 | 原價劃線 → 現價（讓折扣更有感）|
-| 加入購物車 | Zeigarnik | 顯示購物車數量徽章，保持心理張力 |
-| 購物車頁 | 損失規避 | 「這些商品庫存有限」+「X 人正在查看」|
-| 資料填寫 | 認知負荷↓ | SSO 自動填入、儲存資料、訪客結帳 |
-| 付款頁 | 信任建立 | SSL 鎖 + 信用卡圖標 + 退款保證 |
-| 確認頁 | 峰終定律 | 訂單確認動畫 + 「你做了個好選擇」+ 下一步引導 |
-
-**關鍵數據**：
-- 強制創建帳號：放棄率增加 35%（Baymard Institute）
-- 額外費用在最後才顯示：這是第一大放棄原因（48%）
-- 退款保證放在 CTA 旁：轉換率提升 20-30%
-
----
-
-### 2D. 升級 / 付費轉換流程（Upgrade Flow）
-
-**核心心理障礙**：「我現在的免費版夠用嗎？」「升級值得嗎？」
-
-**心理學策略組合**：
-| 觸發點 | 策略 | 設計 |
-|--------|------|------|
-| 功能被鎖住時 | 損失規避 | 「你正在嘗試使用 Pro 功能」→ 展示解鎖後的樣子 |
-| 使用量接近上限 | FOMO + 稀缺 | 「你已使用 80% 的配額」進度條（紅色）|
-| 試用期倒數 | 損失規避 | 「你的 Pro 試用將在 3 天後結束，你將失去...」|
-| 定價頁 | 錨定效應 | 先展示 Enterprise，再展示 Pro（顯得合理）|
-| CTA | 框架效應 | 「繼續使用 Pro」> 「升級到 Pro」（強調延續而非新費用）|
+| Timing | Strategy | Design |
+|--------|----------|--------|
+| 3 days inactive | Zeigarnik | Your project name is waiting for you plus screenshot |
+| 7 days inactive | Loss Aversion | Your progress resets in X days |
+| 14 days inactive | Social Proof | Your colleague Alex just completed XX |
+| 30 days inactive | Reciprocity | New feature or free gift to lower return barrier |
 
 ---
 
-### 2E. 重新激活流程（Re-engagement Flow）
+## Friction Classification
 
-**核心心理障礙**：「我已經習慣沒有這個產品了」「回去要重新學習」
-
-**心理學策略組合**：
-| 時機 | 策略 | 設計 |
-|------|------|------|
-| 停用後 3 天 | Zeigarnik | 「你的 [項目名稱] 等你回來」+ 截圖 |
-| 停用後 7 天 | 損失規避 | 「你的進度即將在 XX 天後重置」|
-| 停用後 14 天 | 社會認同 | 「你的同事 Alex 剛完成了 XX」|
-| 停用後 30 天 | 互惠原則 | 提供新功能或免費禮物，降低重回門檻 |
-
----
-
-## 3. 步驟心理狀態地圖
-
-每個 Flow 的每一步填入這個表格，識別設計需要解決的心理問題：
-
-```markdown
-| 步驟 | 用戶想法（內心獨白） | 情緒 | 主要疑慮 | 設計應對 |
-|------|------------------|------|---------|---------|
-| 進入頁面 | 「這是什麼？對我有用嗎？」 | 中立/好奇 | 不知道價值 | Hero 標題直擊痛點 |
-| 看到表單 | 「要填這麼多？算了...」 | 抗拒 | 摩擦太高 | 最小化欄位 + 進度條 |
-| 填到一半 | 「我快完成了嗎？」 | 焦慮 | 不確定終點 | Zeigarnik 進度條 |
-| 看到付款 | 「我會被騙嗎？」 | 不安 | 不信任 | 安全標誌 + 退款保證 |
-| 完成 | 「真的完成了？有什麼好處？」| 期待 | 不知道下一步 | 成功頁 + 明確引導 |
-```
+| Friction Type | Psychology Cause | Impact | Solution |
+|--------------|-----------------|--------|---------|
+| Decision friction: too many options | Hick's Law | High | Remove options, add recommendations |
+| Information friction: unclear why field needed | Trust deficit | High | Explain purpose next to field |
+| Memory friction: forgot what to fill mid-form | Cognitive Load | Medium | Floating label, step summary |
+| Time friction: unknown time commitment | Anxiety | Medium | Show Takes about 2 minutes or 3 steps total |
+| Trust friction: unsafe feeling | Loss Aversion | High | Security badges, refund guarantee |
+| Technical friction: too complex or errors | Cognitive Load | High | Real-time validation, autofill, clear errors |
 
 ---
 
-## 4. Flow 摩擦點分類
+## Branch Logic & Recovery
 
-### 摩擦類型與解法速查
-
-| 摩擦類型 | 心理學原因 | 影響程度 | 解法 |
-|---------|-----------|---------|------|
-| **決策摩擦** 選項太多 | Hick's Law | 🔴 高 | 移除選項、加推薦標記、預設最佳值 |
-| **信息摩擦** 不知道為什麼要填 | 信任缺失 | 🔴 高 | 在欄位旁說明用途（「用於發送收據」）|
-| **記憶摩擦** 填到一半不記得要填什麼 | 認知負荷 | 🟡 中 | Floating label、步驟摘要側邊欄 |
-| **時間摩擦** 不知道要花多少時間 | 焦慮 | 🟡 中 | 顯示「約需 2 分鐘」或「共 3 步」 |
-| **信任摩擦** 不相信這個操作安全 | 損失規避 | 🔴 高 | 安全標誌、退款保證、真實評論 |
-| **技術摩擦** 操作太複雜或出錯 | 認知負荷 | 🔴 高 | 即時驗證、自動填入、清楚錯誤訊息 |
-| **意義摩擦** 不知道完成有什麼好處 | 動機不足 | 🟡 中 | 在每步驟旁顯示完成後的收益 |
+| Abandonment Point | Detection | Recovery | Example |
+|------------------|-----------|---------|---------|
+| 30+ sec without action | Behavior tracking | Trigger help prompt | ChatBot activated |
+| Starts filling then leaves | Session detection | Recovery email | Your application is halfway done |
+| Leaves at payment | Exit-intent | Popup offer | Here is your exclusive 10% discount |
+| Leaves after pricing | Exit-intent | Lower barrier | Try free for 14 days first |
 
 ---
 
-## 5. 分支邏輯與挽回策略
+## Emotional Journey Map Template
 
-### 用戶放棄時的挽回設計
-
-| 放棄點 | 偵測方式 | 挽回策略 | 文案範例 |
-|--------|---------|---------|---------|
-| 停留 > 30 秒不動 | 行為追蹤 | 主動問「需要幫助嗎？」| ChatBot 觸發 |
-| 開始填寫後離開 | Session 偵測 | Email 挽回 | 「你的申請進行到一半，繼續完成...」 |
-| 付款頁離開 | Exit-intent | Popup 優惠 | 「等一下！這是你專屬的 10% 折扣」|
-| 看完定價頁離開 | Exit-intent | 降低門檻 | 「不確定嗎？先試用 14 天再決定」|
-
-### 錯誤狀態的心理學設計
-
-| 錯誤類型 | 糟糕設計 | 心理學問題 | 好的設計 |
-|---------|---------|-----------|---------|
-| 表單驗證失敗 | 「格式錯誤」 | 模糊，讓用戶更焦慮 | 「Email 格式應為 name@example.com」|
-| 提交後才顯示錯誤 | 整頁紅字 | 認知衝擊，破壞信心 | 即時驗證，每格填完立即反饋 |
-| 付款失敗 | 「交易失敗」 | 不知道原因，不知道怎麼辦 | 「你的卡片被拒絕，請嘗試另一張卡或聯繫銀行」+ 其他付款方式 |
-| 找不到頁面 | 「404 Error」 | 死路，用戶放棄 | 「找不到這個頁面」+ 搜尋框 + 熱門連結 |
-
----
-
-## 6. 輸出模板速查
-
-### 心理旅程地圖表格（直接複製使用）
-
-```markdown
-## 心理旅程地圖
-
-| 步驟 | 用戶內心獨白 | 情緒狀態 | Pain | Anxiety | Confidence | 設計應對 |
-|------|------------|---------|:----:|:-------:|:----------:|---------|
-| 1. XX | 「...」 | 好奇/中立 | 🔴 高 | 🟡 中 | 🔴 低 | [設計決策] |
-| 2. XX | 「...」 | 期待 | 🟡 中 | 🟡 中 | 🟡 中 | [設計決策] |
-| 3. XX | 「...」 | 焦慮 | 🟢 低 | 🔴 高 | 🟡 中 | [設計決策] |
-| 4. XX | 「...」 | 安心 | 🟢 低 | 🟢 低 | 🔴 高 | [設計決策] |
-| 5. XX | 「...」 | 興奮 | 🟢 低 | 🟢 低 | 🔴 高 | [成就感設計] |
-```
-
-### 步驟詳細規格模板（直接複製使用）
-
-```markdown
-### 步驟 N：[步驟名稱]
-
-**進入條件**：[上一步完成了什麼]
-**離開條件**：[用戶完成了什麼才能進下一步]
-
-#### 用戶心理
-- **當下狀態**：[情緒 / 疑慮 / 動機]
-- **心理策略**：[套用哪個心理學原則，以及為什麼]
-
-#### 頁面元素規格
-| 元件 | 內容 | 心理學根據 | 優先級 |
-|------|------|-----------|:-----:|
-| 標題 | `[文案]` | [原則] | P0 |
-| 副標 | `[文案]` | [原則] | P0 |
-| 主 CTA | `[文案]` | [原則] | P0 |
-| 信任元素 | `[文案]` | 社會認同 | P1 |
-| 次要選項 | `[文案]` | [原則] | P2 |
-
-#### 文案備選（供 A/B Test）
-- 標題 A：`[文案]` — 損失規避版
-- 標題 B：`[文案]` — 好奇心版
-- CTA A：`[文案]` — 動作導向
-- CTA B：`[文案]` — 結果導向
-
-#### 分支邏輯
-- ✅ 成功完成 → 步驟 N+1
-- ❌ 放棄/離開 → [挽回策略]
-- ⚠️ 錯誤發生 → [錯誤處理]
-
-#### 設計規格連結
-→ [查看詳細設計規格](./design-spec.md#step-N)
-→ [查看互動原型](#prototype-step-N)
-```
-
-### 設計規格文件（design-spec.md）模板
-
-```markdown
-# [Flow 名稱] — 設計規格文件
-
-> 本文件為主文件 [main.md](./main.md) 的輔助文件，包含工程實作細節
-
-## 步驟 N：[步驟名稱] {#step-N}
-
-### 視覺規格
-- 背景色：`#XXXXXX`
-- 主 CTA 顏色：`#XXXXXX`（對比度：X.X:1）
-- 標題字體大小：`XXpx / XXrem`
-- 元件間距：`XXpx`
-
-### 元件清單
-| 元件 ID | 類型 | 狀態 | 備註 |
-|--------|------|------|------|
-| btn-cta-primary | Button | default / hover / loading / disabled | ... |
-| input-email | Input | empty / focus / error / success | ... |
-
-### 文案庫
-| 位置 | 文案 | 字數限制 |
-|------|------|---------|
-| 頁面標題 | `[文案]` | ≤ 15 字 |
-| 副標題 | `[文案]` | ≤ 30 字 |
-| CTA | `[文案]` | ≤ 8 字 |
-| 錯誤訊息-Email | `請輸入有效的 Email 地址` | — |
-| 空狀態提示 | `[文案]` | ≤ 20 字 |
-
-### 工程備註
-- [ ] 支援 Google / Apple SSO
-- [ ] 表單即時驗證（onChange 觸發）
-- [ ] Loading 狀態（防止重複提交）
-- [ ] 成功後自動跳轉（X 秒後）
-```
+| Step | Inner Monologue | Emotion | Pain | Anxiety | Confidence | Design Response |
+|------|----------------|---------|:----:|:-------:|:----------:|----------------|
+| 1 | ... | Curious | High | Med | Low | [decision] |
+| 2 | ... | Hopeful | Med | Med | Med | [decision] |
+| 3 | ... | Anxious | Low | High | Med | [decision] |
+| 4 | ... | Relieved | Low | Low | High | [decision] |

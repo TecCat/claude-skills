@@ -1,177 +1,178 @@
-# UI 心理學審查清單（85 個檢查項目）
+# UI Psychology Audit Checklist (85 Items)
 
-評分：✅ 符合 / ⚠️ 部分符合 / ❌ 違反 / N/A 不適用
-
----
-
-## A. 感知層（20 項）
-
-### 視覺層級
-- [ ] A01. 頁面有清晰的「第一眼焦點」，用戶在 3 秒內知道頁面重點
-- [ ] A02. 信息按重要性做視覺差異（大小、粗細、顏色）
-- [ ] A03. 主要 CTA 在視覺上最突出，與背景對比度 ≥ 4.5:1（WCAG AA 標準）
-- [ ] A04. 次要行動的視覺優先級明顯低於主要 CTA
-- [ ] A05. 頁面沒有「視覺雜訊」——所有元素都有存在的理由
-
-### 色彩心理學
-- [ ] A06. 主色調與品牌情感一致（藍=信任、橘=活力、綠=成長/安全）
-- [ ] A07. 紅色只用於錯誤/緊迫，不用於裝飾
-- [ ] A08. CTA 按鈕顏色在全站一致（用戶建立條件反射）
-- [ ] A09. 成功狀態用綠色、警告用黃色、錯誤用紅色
-
-### 空白與佈局
-- [ ] A10. 有足夠的空白讓眼睛「休息」，不感到擁擠
-- [ ] A11. 相關元素靠近（格式塔接近性原則）
-- [ ] A12. 不相關的區塊有明確視覺分隔
-
-### 字體
-- [ ] A13. 正文字體大小 ≥ 16px（行動裝置 ≥ 14px）
-- [ ] A14. 行高 1.5-1.75 倍，確保可讀性
-- [ ] A15. 全頁字體種類 ≤ 2 種（標題 + 正文）
-
-### 圖像
-- [ ] A16. 人物圖片用真實照片，不用通用 Stock Photo
-- [ ] A17. 圖片展示「使用後結果」而非「產品本身」
-- [ ] A18. 所有圖片有 Alt Text（無障礙 + SEO）
-- [ ] A19. 圖片不過度裝飾，每張圖都有傳遞信息的目的
-- [ ] A20. 動畫/動效有意義（引導注意 or 提供反饋），不純粹裝飾
+Score: Pass / Partial / Fail / NA
 
 ---
 
-## B. 認知層（25 項）
+## A. Perception Layer (20 items)
 
-### 認知負荷
-- [ ] B01. 頁面一次只傳達 1 個核心訊息
-- [ ] B02. 導航選項 ≤ 7 個
-- [ ] B03. 表單欄位最小化，只問必要信息
-- [ ] B04. 多步驟流程顯示進度指示器
-- [ ] B05. 沒有強制用戶記憶信息才能完成任務
+### Visual Hierarchy
+- [ ] A01. Page has a clear focal point, user knows main point within 3 seconds
+- [ ] A02. Information is visually differentiated by importance (size, weight, color)
+- [ ] A03. Primary CTA is visually dominant, contrast ratio 4.5:1 or higher (WCAG AA)
+- [ ] A04. Secondary actions are clearly lower priority than primary CTA
+- [ ] A05. No visual noise, every element has a reason to exist
 
-### 信息架構
-- [ ] B06. 用戶在 3 秒內能知道「這是什麼」「對我有什麼好處」「我下一步該做什麼」
-- [ ] B07. 分類用用戶的語言，不用內部術語
-- [ ] B08. 相似功能的命名一致（不同頁叫不同名字）
-- [ ] B09. 麵包屑 / 返回按鈕讓用戶知道自己在哪裡
-- [ ] B10. 404 頁面提供有用的引導，而非只顯示錯誤
+### Color Psychology
+- [ ] A06. Primary color aligns with brand emotion (blue=trust, orange=energy, green=growth)
+- [ ] A07. Red used only for errors or urgency, never for decoration
+- [ ] A08. CTA button color is consistent across the entire site
+- [ ] A09. Success = green, warning = yellow, error = red, consistent throughout
 
-### 決策支持
-- [ ] B11. 選項數量 ≤ 7（Hick's Law）
-- [ ] B12. 推薦選項有明確標記（減少決策負擔）
-- [ ] B13. 複雜選擇有比較表或決策輔助
-- [ ] B14. 預設值是大多數用戶的最佳選擇
-- [ ] B15. 不可逆操作有二次確認
+### White Space & Layout
+- [ ] A10. Sufficient white space, page does not feel crowded
+- [ ] A11. Related elements are grouped together (Gestalt proximity)
+- [ ] A12. Unrelated sections have clear visual separation
 
-### 表單體驗
-- [ ] B16. 欄位標籤始終可見（不用純 Placeholder）
-- [ ] B17. 即時驗證（不等到提交才顯示錯誤）
-- [ ] B18. 錯誤訊息具體說明如何修正（不只說「格式錯誤」）
-- [ ] B19. 自動填入友好（姓名、Email、地址欄位支援瀏覽器自動填入）
-- [ ] B20. 密碼欄位有「顯示密碼」切換
+### Typography
+- [ ] A13. Body text size 16px or larger (mobile 14px or larger)
+- [ ] A14. Line height 1.5 to 1.75x for readability
+- [ ] A15. Maximum 2 typefaces across the page
 
-### 回饋與狀態
-- [ ] B21. 所有按鈕點擊有即時視覺回饋（< 100ms）
-- [ ] B22. 需要等待的操作顯示 Loading 狀態
-- [ ] B23. 操作完成有清楚的成功確認
-- [ ] B24. 系統狀態在用戶可見的位置顯示（不只在角落顯示 Toast）
-- [ ] B25. 操作可以被撤銷（Undo），或在不可撤銷前有清楚警告
+### Imagery
+- [ ] A16. People photos use real photos, not generic stock images
+- [ ] A17. Images show results after using the product, not the product itself
+- [ ] A18. All images have alt text
+- [ ] A19. Images serve a purpose, none are purely decorative
+- [ ] A20. Animation is meaningful (directs attention or provides feedback), not decorative
 
 ---
 
-## C. 行為層（25 項）
+## B. Cognition Layer (25 items)
 
-### 動機強化
-- [ ] C01. 主要訴求用「你將獲得的結果」，不用「我們的功能」
-- [ ] C02. 有損失規避語言（「不要錯過...」「你將失去...」）
-- [ ] C03. 有稀缺性/緊迫性提示（當真實存在時）
-- [ ] C04. 有明確的社會認同（用戶數、評分、評論）
-- [ ] C05. 社會認同是具體的（帶姓名/頭像的真實評論 > 匿名評論）
+### Cognitive Load
+- [ ] B01. Page communicates only 1 core message at a time
+- [ ] B02. Navigation items 7 or fewer
+- [ ] B03. Form fields are minimized, only essential information asked
+- [ ] B04. Multi-step flows show a progress indicator
+- [ ] B05. Users never need to memorize information to complete a task
 
-### CTA 優化
-- [ ] C06. 主 CTA 動詞開頭，描述用戶行動的結果（「開始省時間」）
-- [ ] C07. 主 CTA 在折疊線以上可見（不需要滾動才看到）
-- [ ] C08. 長頁面中 CTA 重複出現（每個主要內容段落後）
-- [ ] C09. CTA 附近有風險消除信息（「免費試用」「30天退款」）
-- [ ] C10. 按鈕大小足夠（行動裝置 ≥ 44x44px，桌面 ≥ 36x36px）
+### Information Architecture
+- [ ] B06. User knows what is this, what is in it for me, and what do I do next within 3 seconds
+- [ ] B07. Categories use user language, not internal jargon
+- [ ] B08. Similar features are named consistently across the product
+- [ ] B09. Breadcrumbs or back button help users know where they are
+- [ ] B10. 404 page provides helpful guidance, not just an error message
 
-### 信任建立
-- [ ] C11. 有媒體報導或知名客戶 Logo
-- [ ] C12. 有實際數據（用戶數、節省時間/金錢的數據）
-- [ ] C13. 定價透明，沒有隱藏費用
-- [ ] C14. 有取消訂閱的簡單方式（不藏起來）
-- [ ] C15. 隱私政策 / 資料使用方式清楚說明
+### Decision Support
+- [ ] B11. Options are 7 or fewer (Hick's Law)
+- [ ] B12. Recommended option is clearly marked
+- [ ] B13. Complex choices have a comparison table or decision aid
+- [ ] B14. Default values are the best choice for most users
+- [ ] B15. Irreversible actions require a second confirmation
 
-### 摩擦消除
-- [ ] C16. 不強制用戶在體驗價值前先註冊
-- [ ] C17. 支援 SSO（Google / Apple 登入）減少註冊摩擦
-- [ ] C18. 結帳支援訪客結帳（不強制創建帳號）
-- [ ] C19. 頁面加載時間 < 3 秒（LCP < 2.5s）
-- [ ] C20. 行動裝置體驗與桌面一樣完整
+### Form Experience
+- [ ] B16. Field labels are always visible (no placeholder-only labels)
+- [ ] B17. Real-time validation (errors shown on field blur, not only on submit)
+- [ ] B18. Error messages say specifically how to fix, not just invalid format
+- [ ] B19. Autofill supported for name, email, address fields
+- [ ] B20. Password fields have show/hide toggle
+
+### Feedback & State
+- [ ] B21. All button clicks have immediate visual feedback under 100ms
+- [ ] B22. Operations that require waiting show a loading state
+- [ ] B23. Completed operations show a clear success confirmation
+- [ ] B24. System status is shown where users are looking, not only in a corner toast
+- [ ] B25. Actions can be undone, or user is clearly warned before irreversible actions
+
+---
+
+## C. Behavior Layer (25 items)
+
+### Motivation
+- [ ] C01. Primary value proposition focuses on outcome you will get, not features we have
+- [ ] C02. Loss aversion language used (Do not miss or You will lose)
+- [ ] C03. Scarcity or urgency shown where it genuinely exists
+- [ ] C04. Clear social proof (user count, ratings, reviews)
+- [ ] C05. Social proof is specific (named reviews with photos beats anonymous reviews)
+
+### CTA Optimization
+- [ ] C06. Primary CTA starts with a verb and describes the outcome (Start saving time)
+- [ ] C07. Primary CTA visible above the fold
+- [ ] C08. CTA repeated on long pages after each major content section
+- [ ] C09. CTA has risk-reversal copy nearby (Free trial or 30-day refund)
+- [ ] C10. Button size adequate (mobile 44x44px or larger, desktop 36x36px or larger)
+
+### Trust Building
+- [ ] C11. Media coverage or well-known client logos shown
+- [ ] C12. Real data present (user count, time or money saved)
+- [ ] C13. Pricing is transparent with no hidden fees
+- [ ] C14. Cancellation or unsubscribe is easy to find
+- [ ] C15. Privacy policy and data usage clearly explained
+
+### Friction Removal
+- [ ] C16. Users are not forced to register before experiencing value
+- [ ] C17. SSO (Google or Apple login) available
+- [ ] C18. Guest checkout available (no forced account creation)
+- [ ] C19. Page load time under 3 seconds (LCP under 2.5s)
+- [ ] C20. Mobile experience is fully functional
 
 ### Onboarding
-- [ ] C21. 用戶在第一次使用就能體驗到核心價值（Aha Moment）
-- [ ] C22. Onboarding 步驟 ≤ 5 步
-- [ ] C23. 空狀態（Empty State）有引導用戶行動的提示
-- [ ] C24. 有 Onboarding 完成的獎勵感（動畫、成就感設計）
-- [ ] C25. 非同步引導（Tooltip）在用戶需要時出現，不一次全部彈出
+- [ ] C21. User reaches core value (Aha Moment) on first use
+- [ ] C22. Onboarding is 5 steps or fewer
+- [ ] C23. Empty states show a prompt guiding user to take action
+- [ ] C24. Onboarding completion has a reward feel (animation, achievement)
+- [ ] C25. Contextual tooltips appear when needed, not all at once on login
 
 ---
 
-## D. 整體體驗（15 項）
+## D. Overall Experience (15 items)
 
-### 一致性
-- [ ] D01. 相同功能在所有頁面用相同名稱和設計
-- [ ] D02. 設計語言（按鈕樣式、顏色、字體）全站統一
-- [ ] D03. 互動模式一致（hover 效果、動畫方向等）
+### Consistency
+- [ ] D01. Same features use the same name and design across all pages
+- [ ] D02. Design language (button styles, colors, typography) is consistent sitewide
+- [ ] D03. Interaction patterns are consistent (hover effects, animation direction)
 
-### 無障礙
-- [ ] D04. 顏色對比度符合 WCAG AA 標準
-- [ ] D05. 不用顏色作為唯一的信息傳遞方式
-- [ ] D06. 可用鍵盤操作所有功能
-- [ ] D07. 文字可縮放到 200% 不破版
+### Accessibility
+- [ ] D04. Color contrast meets WCAG AA standards
+- [ ] D05. Color is not the only way information is conveyed
+- [ ] D06. All functions are operable by keyboard
+- [ ] D07. Text can be scaled to 200% without breaking layout
 
-### 行動裝置
-- [ ] D08. 點擊目標夠大（≥ 44x44px）
-- [ ] D09. 表單在行動裝置呼出正確鍵盤類型（數字/Email/電話）
-- [ ] D10. 手勢操作直覺（滑動、捏合縮放）
-- [ ] D11. 不依賴 Hover 傳遞重要信息（行動裝置沒有 Hover）
+### Mobile
+- [ ] D08. Tap targets are 44x44px or larger
+- [ ] D09. Forms trigger the correct keyboard type (number, email, phone)
+- [ ] D10. Gestures are intuitive (swipe, pinch to zoom)
+- [ ] D11. Important information does not depend on hover
 
-### 錯誤處理
-- [ ] D12. 錯誤訊息用用戶語言，不用技術術語
-- [ ] D13. 錯誤狀態有明確的恢復路徑
-- [ ] D14. 網路斷線狀態有友好提示
+### Error Handling
+- [ ] D12. Error messages use plain language, not technical terms
+- [ ] D13. Error states provide a clear recovery path
+- [ ] D14. Offline state shows a friendly notice
 
-### 整體轉換
-- [ ] D15. 有清楚的主要轉換目標，整個頁面服務於這個目標
+### Overall Conversion
+- [ ] D15. There is one clear primary conversion goal and the entire page serves it
 
 ---
 
-## 審查評分計算
+## Scoring
 
-```
-完成率 = 符合項目數 / 適用項目數 × 100%
+Completion rate = Items passed divided by applicable items times 100%
 
-90-100%：優秀，保持並監測
-75-89%：良好，針對 ❌ 項目優化
-60-74%：及格，有明顯轉換提升空間
-< 60%：需要全面重新設計
-```
+90-100%: Excellent, maintain and monitor
+75-89%: Good, fix failed items
+60-74%: Acceptable, meaningful conversion improvement possible
+Below 60%: Needs full redesign
 
-## 輸出格式
+## Audit Output Format
 
-```markdown
-## 審查總分：XX/85 （XX%）
+UI Psychology Audit | Product or Page Name
+Date: YYYY-MM-DD | Scope: XX
 
-### 🔴 嚴重問題（立即修復）
-[❌ 項目清單，按影響力排序]
+Executive Summary: biggest problem, biggest opportunity, first action.
 
-### 🟡 需要改善（本季優化）
-[⚠️ 項目清單]
+Audit Score:
+- A. Perception (20 items): X/20
+- B. Cognition (25 items): X/25
+- C. Behavior (25 items): X/25
+- D. Overall Experience (15 items): X/15
+- Total: X/85
 
-### ✅ 做得好的地方
-[✅ 項目清單，用於建立信心]
+Issue Map: list all failed items by page or component
 
-### 優化路線圖
-Week 1：[不需要工程師的修改]
-Month 1：[設計修改]
-Month 2：[架構性修改]
-```
+Severity Matrix: issue / severity 1-5 / fix difficulty 1-5 / priority score / owner
+
+Optimization Roadmap:
+- Week 1: copy or config changes, no engineering needed
+- Week 2-3: visual updates
+- Month 2: structural changes
