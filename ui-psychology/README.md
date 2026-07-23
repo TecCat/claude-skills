@@ -1,4 +1,4 @@
-# 🧠 ui-psychology — Claude Skill
+# 🧠 ux-psychology — Claude Skill
 
 > Design decisions backed by psychology research, not gut feeling.
 > 每個設計決策都有心理學研究支撐，而不是憑感覺。
@@ -10,13 +10,11 @@
 
 ## What It Does
 
-This Claude Skill gives Claude a systematic psychology framework to **analyze**, **design**, and **audit** any UI — answering questions most designers can't:
+This Claude Skill gives Claude a systematic psychology framework to **analyze**, **design**, and **audit** any UX — answering questions that are important to UA flow.
 
 - Why is no one clicking this CTA?
 - Why do users abandon the form halfway?
 - Why does the pricing page convert at only 1%?
-
-這個 Skill 讓 Claude 用系統化的心理學框架分析、設計、審查任何介面——回答大多數設計師說不清楚的問題。
 
 ---
 
@@ -97,11 +95,11 @@ Every recommendation includes:
 ### Claude Code
 ```bash
 # Add to ~/.claude/CLAUDE.md
-@/path/to/.skills/ui-psychology/SKILL.md
+@/path/to/.skills/ux-psychology/SKILL.md
 ```
 
 ### Claude.ai Chat
-1. Download `ui-psychology.skill` from [Releases](../../releases)
+1. Download `ux-psychology.skill` from [Releases](../../releases)
 2. **Claude.ai → Settings → Skills → Upload**
 
 ---
@@ -109,7 +107,7 @@ Every recommendation includes:
 ## File Structure
 
 ```
-ui-psychology/
+ux-psychology/
 ├── README.md
 ├── SKILL.md                  # Main entry: mode routing + output templates
 └── references/
