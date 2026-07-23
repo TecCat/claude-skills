@@ -1,7 +1,7 @@
 # 🎨 prototype — Claude Skill
 
-> Throwaway code that answers a question. The question decides the shape.
-> 用來回答一個問題的拋棄式程式碼。問題決定形式。
+> Prototypes are the thinking stage, not the shipping stage.
+> Before you commit to a design, ask the hard question by building and running it.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill-blueviolet)](https://claude.ai)
@@ -102,8 +102,31 @@ prototype/
 
 ---
 
+## Attribution & Inspiration
+
+This skill adapts the core prototype methodology from
+[mattpocock/skills/prototype](https://github.com/mattpocock/skills/blob/main/skills/engineering/prototype/SKILL.md),
+which introduced the powerful insight that **a single clear question shapes the entire prototype**.
+
+**Matt's version** is optimized for individual engineers shipping production code quickly.
+
+**This version (TecCat)** adapts that framework for:
+- **Team workflows**: shared documentation, code review integration
+- **Extended duration**: tracking prototype decisions across sprints
+- **Cross-functional alignment**: helping non-engineers understand why you prototyped
+
+**Key original contributions**:
+- Structured step-by-step walkthrough for teams
+- README template for prototypes (question + how-to + answer)
+- Team code-review checklist for prototype validation
+- Common failure modes & how to avoid them
+- Version control guidance for team branches
+
+---
+
 ## License
 
-MIT — Free to use, fork, and share. Credit appreciated.
+MIT — Free to use, fork, and share.
 
-*Built by [@TecCat](https://github.com/TecCat)*
+*Original work by [@mattpocock](https://github.com/mattpocock)*  
+*Adapted by [@TecCat](https://github.com/TecCat)*
