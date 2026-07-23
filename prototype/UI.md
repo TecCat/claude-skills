@@ -1,19 +1,28 @@
+---
+credits: >
+  Core concept adapted from mattpocock/skills/prototype/UI.md.
+  Implementation code and solo-developer guidance are original — see References below.
+---
+
 # UI Prototype Branch
 
-Generate several **radically different** UI variations on a single route, switchable
-via a URL search param and a floating bottom bar.
+Design decisions get made by comparing real options side by side, not by describing
+them in your head for the tenth time. This branch builds several genuinely different
+directions into one page so you can click between them and feel the difference
+immediately — no need to explain your taste to anyone but yourself.
 
 Use this when the question is about **what something should look like** — layout,
 interaction patterns, information hierarchy, or visual design direction.
 
-**Trigger phrases:**
+**Reach for this branch when:**
 - "Show me a few ways this could look."
 - "I'm not sure how to lay out this page."
 - "Prototype the dashboard / form / card / modal."
 - "Try a few designs."
 - "Let me play with it."
 
-If the question is "does this logic feel right" — wrong branch. Use [LOGIC.md](./LOGIC.md).
+Wrong question? If you're asking "does this logic feel right" instead, go to
+[LOGIC.md](./LOGIC.md) — this branch is for layout, not state.
 
 ---
 
@@ -27,7 +36,7 @@ Write down two things (in the prototype README or a comment at the top):
 
 **Variants must be radically different** — not colour tweaks or font changes.
 Different layout paradigms. Different interaction models. Different information
-hierarchies. If a user can't tell the difference at a glance, the variants aren't
+hierarchies. If you can't tell the difference at a glance, the variants aren't
 different enough.
 
 ---
@@ -39,15 +48,15 @@ different enough.
 ```
 prototype-<name>/
 ├── README.md        ← question + variants list + how to run + ## Answer (blank)
-├── page.tsx         ← route with variant switcher (Next.js) OR
-├── App.tsx          ← root component (Vite/CRA) OR
-├── index.html       ← single file (plain HTML, fastest to spin up)
+├── page.tsx          ← route with variant switcher (Next.js) OR
+├── App.tsx           ← root component (Vite/CRA) OR
+├── index.html         ← single file (plain HTML, fastest to spin up)
 ├── variants/
 │   ├── VariantA.tsx  ← e.g. "Card grid with sidebar filters"
 │   ├── VariantB.tsx  ← e.g. "Full-width table with inline editing"
 │   └── VariantC.tsx  ← e.g. "Split-pane with detail drawer"
 └── data/
-    └── mock.ts       ← shared mock data (realistic, not lorem ipsum)
+    └── mock.ts        ← shared mock data (realistic, not lorem ipsum)
 ```
 
 ### Variant Switcher — URL Param + Floating Bar
@@ -55,6 +64,7 @@ prototype-<name>/
 The switcher must be **always visible** and require **zero navigation** to switch.
 
 **URL param pattern:**
+
 ```
 /?variant=a   → VariantA
 /?variant=b   → VariantB
@@ -143,13 +153,13 @@ npx vite
 
 Each variant should make a **different bet** about what matters most:
 
-| Bet | Example layout |
-|---|---|
-| Scannability | Data-dense table, minimal whitespace |
-| Focus | One item at a time, full-screen detail |
-| Overview | Card grid, lots of visual summaries |
-| Speed | Keyboard-first, command palette |
-| Familiarity | Match a well-known pattern (Gmail, Notion, Figma) |
+| Bet          | Example layout                                    |
+| ------------ | ------------------------------------------------- |
+| Scannability | Data-dense table, minimal whitespace              |
+| Focus        | One item at a time, full-screen detail            |
+| Overview     | Card grid, lots of visual summaries               |
+| Speed        | Keyboard-first, command palette                   |
+| Familiarity  | Match a well-known pattern (Gmail, Notion, Figma) |
 
 ---
 
@@ -166,11 +176,24 @@ Each variant should make a **different bet** about what matters most:
 
 ## When You Have the Answer
 
-1. Run the prototype and switch through variants with the user (or leave it running
-   for them to explore async).
+1. Switch through the variants yourself, slowly, more than once — first impressions
+   lie, and without a teammate's second opinion you're the only check you get.
 2. Fill in the `## Answer` section of the README — which variant, and why.
 3. Note any elements from other variants worth incorporating.
-4. Capture the verdict durably (ADR, issue, commit message).
+4. Capture the verdict durably (ADR, commit message, or the README itself).
 5. Delete or archive the prototype directory.
 
 The goal is a decision, not a deliverable.
+
+---
+
+## References
+
+The core idea of this branch — several radically different variants on one route,
+switchable via URL param and a floating bar — is adapted from
+[mattpocock/skills/prototype/UI.md](https://github.com/mattpocock/skills/blob/main/skills/engineering/prototype/UI.md)
+by [Matt Pocock](https://github.com/mattpocock).
+
+The concrete implementation (the `VariantSwitcher` component, file structure, mock
+data conventions, "What Makes a Good Variant" table) and the solo-developer framing
+in "When You Have the Answer" are original additions.

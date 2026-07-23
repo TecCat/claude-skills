@@ -14,6 +14,9 @@ Before committing to real implementation, a prototype validates whether your ide
 
 在投入真正實作之前，原型驗證你的想法是否真的可行。這個 Skill 根據你想回答的問題，引導 Claude 走向兩個分支。
 
+Built for **solo and independent developers** — no teammate to catch skipped steps,
+so the process leans on self-imposed checklists and documentation for future-you.
+
 ---
 
 ## Two Branches
@@ -104,20 +107,28 @@ prototype/
 
 ## Attribution & Inspiration
 
-This skill adapts the core prototype methodology from
-[mattpocock/skills/prototype](https://github.com/mattpocock/skills/blob/main/skills/engineering/prototype/SKILL.md),
-which introduced the powerful insight that **a single clear question shapes the entire prototype**.
+This skill is inspired by
+[mattpocock/skills/prototype](https://github.com/mattpocock/skills/blob/main/skills/engineering/prototype/SKILL.md)
+by [Matt Pocock](https://github.com/mattpocock), which introduced the core insight
+that **a single clear question shapes the entire prototype**, plus the two-branch
+routing between logic and UI prototypes.
 
-**Matt's version** is optimized for individual engineers shipping production code quickly.
+**Matt's version** is built for engineers on teams shipping production code fast.
 
-**This version** adapts that framework for: non-engineers individual understands why you prototyped.  
+**This version** adapts that framework for **solo / independent developers** who
+don't have a teammate to catch a skipped step or a forgotten decision.
 
-**Key original contributions**:
-- Structured step-by-step walkthrough for teams
-- README template for prototypes (question + how-to + answer)
-- Team code-review checklist for prototype validation
-- Common failure modes & how to avoid them
-- Version control guidance for team branches
+**Kept from Matt's original:**
+- The core insight: "the question decides the shape"
+- The two-branch routing (logic vs. UI)
+- The core discipline: throwaway from day 1, no persistence, no tests
+
+**Original contributions in this version:**
+- A table-based decision framework explaining *why* each branch fits
+- Structured README template (question + how-to + answer)
+- A "For Solo Developers" section — self-imposed checklists in place of code review
+- "Common Failures" — anti-patterns specific to working without a team
+- Concrete implementation code (TypeScript state loop, React variant switcher)
 
 ---
 
@@ -125,5 +136,5 @@ which introduced the powerful insight that **a single clear question shapes the 
 
 MIT — Free to use, fork, and share.
 
-*Original work by [@mattpocock](https://github.com/mattpocock)*  
-*Adapted by [@TecCat](https://github.com/TecCat)*
+*Original concept & routing logic by [@mattpocock](https://github.com/mattpocock)*
+*Solo-developer adaptation by [@TecCat](https://github.com/TecCat)*

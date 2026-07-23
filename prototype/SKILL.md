@@ -8,9 +8,9 @@ description: >
   mock up a UI, explore design options, or says "prototype this", "let me play with
   it", "try a few designs".
 disable-model-invocation: false
-credits: |
-  Adapted from mattpocock/skills/prototype.
-  See References section below.
+credits: >
+  Inspired by mattpocock/skills/prototype (https://github.com/mattpocock/skills).
+  Adapted and expanded for solo/independent developers — see References below.
 ---
 
 # Prototype
@@ -18,8 +18,8 @@ credits: |
 ## The Core Idea
 
 Prototypes are the thinking stage, not the shipping stage.
-Before you commit to a design—before you start the sprint—
-you ask the hard question by building and running it.
+Before you commit to a design—before you write the real code—
+you ask the hard question by building and running something small.
 
 The single clearest question shapes everything: what you build, how long you spend,
 where you put your energy. Two very different questions need very different artifacts.
@@ -38,8 +38,8 @@ What are you actually trying to learn?
 | **Both at once** | ⚠️ **Stop here** | Split into two prototypes | One per question, one per artifact type |
 
 **Ambiguous?** Default to the question type that matches your surrounding code:
-- Backend module → logic (state/data question)
-- Page or component → UI (interaction question)
+- Backend module → logic (state/data question) → follow [LOGIC.md](./LOGIC.md)
+- Page or component → UI (interaction question) → follow [UI.md](./UI.md)
 - State your assumption at the top of the prototype.
 
 ---
@@ -47,7 +47,8 @@ What are you actually trying to learn?
 ## Step 2 — Locate and Name the Prototype
 
 Place the prototype **next to the code it is prototyping** — same directory as the
-module or component it explores. Context should be obvious to anyone opening the folder.
+module or component it explores. Context should be obvious to you (or future-you)
+opening the folder six months from now.
 
 Name it so a casual reader knows it's **NOT production code**:
 
@@ -75,7 +76,7 @@ Every prototype directory gets a `README.md` with exactly three sections:
 Example: "Can we validate email on-blur without blocking UX?"
 
 ## How to Run
-[One command. Whatever the project already uses.]
+[One command. Whatever you already use.]
 
 Example: `npm run proto:payment` or `python prototype.py`
 
@@ -85,27 +86,28 @@ Example: `npm run proto:payment` or `python prototype.py`
 [Your findings go here after you're done prototyping]
 ```
 
+As a solo developer, this README is the only thing standing between you and
+"why did I decide that?" three months from now. Nobody else will remember for you.
+
 ---
 
 ## Step 3 — Build Throwaway, Not Production
 
-### Rules for Both Branches
-
-These apply to **both LOGIC.md and UI.md** prototypes:
+### Rules
 
 1. **No tests** — A prototype that needs tests isn't a prototype anymore; it's becoming production code. Stop and refactor.
 
 2. **No real database** — Use in-memory state, mock data, or a scratch file clearly labeled "PROTOTYPE—wipe me".
    Exception: if the prototype's question is specifically about persistence (caching behavior, replication), then hit a real scratch DB.
 
-3. **No generalization** — "What if we wanted to support X later?" = wasted effort.
+3. **No generalization** — "What if I wanted to support X later?" = wasted effort.
    This prototype answers one question. When done, you delete it or fold the validated logic into real code.
 
 4. **No error handling beyond runnable** — Skip try/catch, skip logging infrastructure, skip graceful degradation.
    If it crashes, that's fine—you'll see it immediately.
 
 5. **Surface the state** — After every action (in logic) or every variant switch (in UI),
-   print or render the full relevant state. The user must see what changed.
+   print or render the full relevant state. You must see what changed.
 
 6. **Delete or absorb** — When the prototype answers its question, one of two things happens:
    - Delete it entirely, OR
@@ -119,12 +121,13 @@ These apply to **both LOGIC.md and UI.md** prototypes:
 
 ### Before You Delete
 
-The prototype will disappear, but the insight must stay. You have one day to capture it.
+The prototype will disappear, but the insight must stay. You have one sitting to capture it —
+once the terminal window closes, the "aha" moment is gone.
 
 1. **Write the answer** into a durable place:
    - The `README.md` → Answer section (see Step 2)
-   - An ADR: `docs/adr/NNNN-why-we-chose-X.md`
-   - A GitHub issue or PR comment
+   - An ADR: `docs/adr/NNNN-why-i-chose-X.md`
+   - A commit message on the branch where you fold in the validated logic
    - A `DESIGN.md` in the component folder
 
 2. **One sentence minimum**: "This turned out to matter more than I expected because..."
@@ -133,37 +136,28 @@ The prototype will disappear, but the insight must stay. You have one day to cap
 
 ---
 
-## For Teams (Recommended Additions)
+## For Solo Developers
 
-These practices help teams scale prototype learning:
+Working alone changes what you need from a prototype process. There's no teammate
+to catch you if you skip a step — so the discipline has to be self-imposed.
 
-### Code Review the Prototype
+### The Solo Checklist
 
-Before deletion, have someone else walk through it:
-- Does it actually answer your stated question?
-- Did you learn something non-obvious?
-- Does the insight belong in an ADR or decision log?
+Before you delete a prototype, ask yourself out loud (yes, actually):
+- Did this answer my stated question, or did I get distracted and build something else?
+- Would I remember this decision in 3 months without the note I'm about to write?
+- Is there a validated piece of logic here worth keeping, or is it 100% throwaway?
 
-This takes 15 minutes and prevents re-prototyping the same question in 6 months.
+### Fighting "Just Ship the Prototype" Temptation
 
-### Prototype as Alignment Tool
+Solo developers are the most likely to skip the cleanup step, because there's no
+code review gate forcing it. The fix: **name it so ugly you're embarrassed to ship it.**
+`prototype-DELETE-ME-checkout/` is harder to accidentally merge than `checkout-v2/`.
 
-When the team disagrees about UX (forms vs modal, pagination vs infinite scroll):
-- Build both variants in the same prototype
-- Let everyone click through
-- Arguing about mockups is waste; clicking through designs converges faster
+### Future-You Is a Different Person
 
-### Version Control Hygiene
-
-Never commit prototypes to `main`:
-
-```bash
-git checkout -b feature/prototype-checkout-flow
-# ... build and run prototype ...
-# ... answer the question ...
-git checkout main
-git branch -D feature/prototype-checkout-flow  # Delete without merge
-```
+Write the README as if explaining it to a stranger — because in 3 months, you are one.
+Don't write "obviously we chose X" — write "I chose X because Y, and rejected Z because W."
 
 ---
 
@@ -173,25 +167,25 @@ git branch -D feature/prototype-checkout-flow  # Delete without merge
 
 You try to answer 3 questions at once: state + UI + performance.
 
-- **Result**: A franken-artifact that confuses everyone, including you.
+- **Result**: A franken-artifact that confuses even you, a week later.
 - **Fix**: One question per prototype. When done, delete it and start fresh.
 
 ### Trap 2: Prototype Rot
 
-It works so well that someone shoves it into production.
-Now you're maintaining the throwaway code for years.
+It works so well that you just... keep building on it instead of writing it "properly."
+Now you're maintaining throwaway code for years.
 
 - **Fix**: Name it obviously (`prototype-*`). Delete it the day after you ship the real thing.
-- **Better**: Use a branch, not main—delete the branch automatically.
+- **Better**: Build it on a branch, not main — delete the branch when you're done.
 
 ### Trap 3: The Forgotten Answer
 
 You built a brilliant prototype, learned something, deleted it.
-Three months later: "Why did we choose that design?"
-Nobody remembers.
+Three months later: "Why did I choose that design?"
+You don't remember, and there's no teammate to ask either.
 
 - **Fix**: Before deletion, write the answer into `DESIGN.md` or an ADR (10 minutes).
-- **Even better**: Link that ADR from the component's README.
+- **Even better**: Link that note from the component's README so future-you finds it.
 
 ---
 
@@ -199,8 +193,8 @@ Nobody remembers.
 
 | Scenario | Branch | Artifact | Effort |
 |----------|--------|----------|--------|
-| "Does this logic work?" | LOGIC.md | Interactive terminal | 30-90 min |
-| "What should this look like?" | UI.md | 3-5 UI variants | 45-120 min |
+| "Does this logic work?" | [LOGIC.md](./LOGIC.md) | Interactive terminal | 30-90 min |
+| "What should this look like?" | [UI.md](./UI.md) | 3-5 UI variants | 45-120 min |
 | State/logic question, ambiguous context | LOGIC.md | See LOGIC.md | — |
 | UI/design question, ambiguous context | UI.md | See UI.md | — |
 | Not sure what you're asking | Stop → reread Step 1 | — | 5 min |
@@ -209,28 +203,28 @@ Nobody remembers.
 
 ## References
 
-This skill adapts the core prototype methodology from
-[mattpocock/skills/prototype](https://github.com/mattpocock/skills/blob/main/skills/engineering/prototype/SKILL.md).
+This skill is inspired by
+[mattpocock/skills/prototype](https://github.com/mattpocock/skills/blob/main/skills/engineering/prototype/SKILL.md)
+by [Matt Pocock](https://github.com/mattpocock), which introduced the core insight that
+**a single clear question shapes the entire prototype**, and the two-branch routing
+between logic (terminal/state) and UI (multi-variant) prototypes.
 
-**Matt's version** is optimized for individual engineers shipping production code rapidly.
+**Matt's version** is built for engineers on teams shipping production code fast.
 
-**This version (TecCat)** expands that framework for:
-- **Team workflows**: shared documentation templates, code review integration
-- **Extended duration**: tracking decisions across multiple prototypes and sprints
-- **Cross-functional alignment**: helping non-engineers understand why you prototyped
+**This version** adapts that framework for **solo and independent developers**, who
+don't have a teammate to catch skipped steps or forgotten decisions. Key differences:
 
-**What we kept** from Matt's original:
+**What's kept from Matt's original:**
 - The core insight: "the question decides the shape"
 - The two-branch routing (logic vs. UI)
 - The discipline: throwaway from day 1, no persistence, no tests
 
-**What we added** (original contributions):
-- Step-by-step walkthrough for teams unfamiliar with the practice
-- Structured README template with question + how-to + answer sections
-- Detailed table-based decision framework
-- Team code-review checklist
-- Common failure modes and how to avoid them
-- Version control guidance for team branches
+**What's added here (original content):**
+- A table-based decision framework with the "why" spelled out
+- Structured README template (question + how-to + answer)
+- A "For Solo Developers" section — self-imposed checklists instead of code review gates
+- "Common Failures" — three anti-patterns specific to working without a team
+- Emphasis on documentation for future-you, since there's no one else to ask later
 
 Both versions share the same philosophy:
 **write down your question first. That one sentence decides everything.**
